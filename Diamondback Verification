@@ -1,0 +1,14 @@
+forge verify-contract \
+  --rpc-url https://rpc.monad.xyz \
+  --verifier sourcify \
+  --verifier-url 'https://sourcify-api-monad.blockvision.org/' \
+  --chain-id 143 \
+  <address> \0x64167eE8B041a4D52eddE30dBA5d6901BBF8d545
+  [contractFile]:[contractName]
+ERROR etherscan: Failed to deserialize response: expected value at line 1 column 1
+ERROR etherscan: Failed to deserialize ABI response err=Serde { error: Error("expected value", line: 1, column: 1)
+Error: Provided URL https://sourcify-api-monad.blockvision.org/ is host only. Did you mean to use the API endpoint \`https://sourcify-api-monad.blockvision.org/api\` ?
+[profile.default]
+metadata = true
+metadata_hash = "none"  # disable ipfs
+use_literal_content = true # store source co
